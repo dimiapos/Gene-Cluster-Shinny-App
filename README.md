@@ -1,5 +1,5 @@
 # Gene-Cluster-Shinny-App
-##Gene Cluster Shiny Application using RnaSeq files and Go.Db Kegg.Db and Biomart characteristics
+Gene Cluster Shiny Application using RnaSeq files and Go.Db Kegg.Db and Biomart characteristics
 
 This is a shiny Application that gives you the opportunity to use an **RnaSeq file** , enrich this dataset with specific characteristcs of those genes using **Go.Db**, **Kegg.Db** and **Biomart** , in order to **cluster** this with three different algorithms (**kmodes,kproto,kmeans** for every different)
 
@@ -21,7 +21,7 @@ The basic steps that this application has are:
    * Graphs showing the evaluation metrics of every clustering
    
 The packages you will need are in a command( you need the latest Rstudio version):
-
+```
 load.lib<-c("BiocManager", "shiny", "networkD3", "shinybusy",  "UpSetR", "dplyr",  "DT", "klaR" ,"clustMixType" ,"cluster" ,"readr" ,"Rtsne")
 
 install.lib<-load.lib[!load.lib %in% installed.packages()]
@@ -92,3 +92,4 @@ library(biomaRt)
 library(Biobase)
 
 library(DT)
+```
